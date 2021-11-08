@@ -8,6 +8,7 @@ body {
     display: flex;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
+    min-height: 100vh;
 }
 .header {
     width: 100%;
@@ -18,13 +19,16 @@ body {
     background-color: #d9d9d9;
     padding-bottom: 40px;
 }
-.main-wrapper{
+.flex-wrapper{
+    flex: 1 0 auto;
+}
+.content-wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .settings-wrapper{
     display: flex;
@@ -35,6 +39,9 @@ body {
 }
 .slidecontainer{
     margin-top: 20px;
+}
+.invis{
+    margin-left: 160px;
 }
 .grid-container{
     border: 1px solid steelblue;
@@ -48,7 +55,6 @@ body {
     padding: 10px;
     background-color: #284b63;
     color: white;
-    max-height: 40px;
 }
 @keyframes spin{
     from {transform: rotate(0deg)}
@@ -71,11 +77,7 @@ body {
     font-size: 26px;
     padding-left: 8px;
 }
-.flex-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+
 button{
     margin: 20px;
 }
