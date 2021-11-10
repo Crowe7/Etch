@@ -8,3 +8,6 @@ slider.oninput = function() {
         output[i].textContent = this.value;
     }
 }
+
+// make a bunch of divs and give class fill <div class="fill"></div> like that
+ 

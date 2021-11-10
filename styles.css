@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 * {
     box-sizing: border-box;
     padding: 0;
@@ -111,11 +111,18 @@ button {
 .invis{
     margin-left: 300px;
 }
-.grid-container{
+/* the grid template needs hooked up to js and tied to slider number repeat(2, 1fr) means make 2 rows and then 2 columns */
+/* there needs to be divs inside of the grid container for these to show 50 x 50 of them */
+#gridContainer{
+    display: grid;
+    grid-template: repeat(50, 1fr) / repeat(50, 1fr);
     border: 2px solid steelblue;
     height: 700px;
     width: 700px;
     box-shadow: 1px 1px 5px 4px #d9d9d9;
+}
+#gridContainer div{
+    border: 1px solid grey;
 }
 .footer{
     display: flex;
@@ -150,3 +157,5 @@ button {
 button{
     margin: 20px;
 }
+
+
