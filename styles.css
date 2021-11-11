@@ -27,7 +27,8 @@ button {
 }
 #rainbowBtn{
     padding: 15px 73px !important;
-    background: linear-gradient(90deg, #fb0000 0%, #22ff00 50%, #0097ff 100%);
+    background-image: url(color.gif);
+    color: white;
 }
 #rainbowBtn:hover {
     box-shadow: 3px 0px 5px #fb0000, 0px 4px 5px #22ff00,  -3px 0 5px #0097ff;
