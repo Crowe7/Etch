@@ -6,7 +6,7 @@ for (i=0; i < output.length; i++) {
 }
 slider.oninput = function() {
     for (i=0; i < output.length; i++) {
-        output[i].textContent = this.value;
+        output[i].textContent = this.value; 
     }
 }
 function makeGrid(a) {
@@ -18,5 +18,16 @@ function makeGrid(a) {
         }
     }
 }
+makeGrid(100);
+function deleteGrid(b) {
+    size = b;
+    for(i = 0; i < size; i++) {
+        for(j = 0; j < size; j++) {
+           let div = gridContainer.lastElementChild;
+            div.remove();
+        }
+    }
+}
+deleteGrid(100);
 // make a bunch of divs and give class fill <div class="fill"></div> like that
  
