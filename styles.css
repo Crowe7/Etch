@@ -115,7 +115,7 @@ button {
 /* there needs to be divs inside of the grid container for these to show 50 x 50 of them */
 #gridContainer{
     display: grid;
-    grid-template: repeat(50, 1fr) / repeat(50, 1fr);
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr);
     border: 2px solid steelblue;
     height: 700px;
     width: 700px;
