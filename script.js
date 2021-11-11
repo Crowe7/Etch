@@ -2,9 +2,10 @@ let slider = document.querySelector('#myRange');
 let output = document.querySelectorAll('.gridAmount');
 let gridContainer = document.querySelector('#gridContainer');
 let grid = document.querySelector(".grid");
-let gridCss = "grid-template:repeat(" +slider.value + ", 1fr) / repeat(" + slider.value + ", 1fr);"
+let gridCss = 0;
 initPage();
 function initPage() {
+    gridCss = "grid-template:repeat(" + slider.value + ", 1fr) / repeat(" + slider.value + ", 1fr);"
     for (i=0; i < output.length; i++) {
         output[i].textContent = slider.value;
     }
@@ -13,10 +14,13 @@ function initPage() {
 }
 
 slider.oninput = function() {
+    gridCss = "grid-template:repeat(" +this.value + ", 1fr) / repeat(" + this.value + ", 1fr);"
     for (i=0; i < output.length; i++) {
         output[i].textContent = this.value; 
     }
-    deleteGrid(this.value);
+    grid.style.cssText = gridCss;
+    deleteGrid(10000);
+    makeGrid(this.value);
 }
 function makeGrid(a) {
     size = a;
@@ -32,7 +36,12 @@ function deleteGrid(b) {
     for(i = 0; i < size; i++) {
         for(j = 0; j < size; j++) {
             let div = gridContainer.lastElementChild;
-            div.remove();
+            if(div === null) {
+                break;
+            }
+            else {
+                div.remove();
+            }
         }
     }
 }
