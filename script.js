@@ -17,7 +17,7 @@ slider.oninput = function() {
     for (i=0; i < output.length; i++) {
         output[i].textContent = this.value; 
     }
-    makeGrid(this.value, 10000, this.value);
+    makeGrid(this.value, this.value);
 }
 function makeGridDiv(a) {
     size = a;
@@ -28,8 +28,8 @@ function makeGridDiv(a) {
         }
     }
 }
-function deleteGridDiv(b) {
-    size = b * b;
+function deleteGridDiv() {
+    size = gridContainer.children.length ;
     for(i = 0; i <+ size; i++) {
             let div = gridContainer.lastElementChild;
             if(div === null) {
@@ -40,10 +40,10 @@ function deleteGridDiv(b) {
             }
         }
     }
-function makeGrid(gridSize, deleteSize, gridCssChange) {
+function makeGrid(gridSize, gridCssChange) {
     gridCss = "grid-template:repeat(" +gridCssChange + ", 1fr) / repeat(" + gridCssChange + ", 1fr);"
     grid.style.cssText = gridCss;
-    deleteGridDiv(deleteSize)
+    deleteGridDiv();
     makeGridDiv(gridSize);
     console.log(deleteGridDiv(gridSize));
     console.log(makeGridDiv(gridSize));
