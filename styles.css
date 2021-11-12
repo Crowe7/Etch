@@ -60,11 +60,6 @@ button {
     box-shadow: 6px 2px 5px #d9d9d9;
     cursor: pointer;
 }
-.clearClass {
-    box-shadow: 20px 20px 10px #d9d9d9;
-    color: white;
-    cursor: pointer;
-}
 #clearBtn:hover {
     box-shadow: 20px 20px 10px #d9d9d9;
     color: white;
@@ -133,8 +128,6 @@ button {
 .invis{
     margin-left: 300px;
 }
-/* the grid template needs hooked up to js and tied to slider number repeat(2, 1fr) means make 2 rows and then 2 columns */
-/* there needs to be divs inside of the grid container for these to show 50 x 50 of them */
 #gridContainer{
     display: grid;
     border: 2px solid steelblue;
@@ -143,7 +136,6 @@ button {
     box-shadow: 1px 1px 5px 4px #d9d9d9;
 }
 #gridContainer div{
-    border: .2px solid lightgray;
 }
 .footer{
     display: flex;
@@ -179,3 +171,6 @@ button{
     margin: 20px;
 }
 
+.fill{
+    background-color: black !important;
+}
