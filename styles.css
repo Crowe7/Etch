@@ -19,6 +19,12 @@ button {
 #regBtn{
     padding: 15px 85px !important;
 }
+.regClass {
+    color: white;
+    box-shadow: 6px 2px 5px black;
+    background-color: black;
+    cursor: pointer;
+}
 #regBtn:hover {
     color: white;
     box-shadow: 6px 2px 5px black;
@@ -30,6 +36,10 @@ button {
     background-image: url(color.gif);
     color: white;
 }
+.rainbowClass{
+    box-shadow: 3px 0px 5px #fb0000, 0px 4px 5px #22ff00,  -3px 0 5px #0097ff;
+    cursor: pointer;
+}
 #rainbowBtn:hover {
     box-shadow: 3px 0px 5px #fb0000, 0px 4px 5px #22ff00,  -3px 0 5px #0097ff;
     cursor: pointer;
@@ -38,10 +48,21 @@ button {
     background-color: black;
     color: white;
 }
+.eraseClass {
+    background-color: lightpink !important;
+    color: black !important;
+    box-shadow: 6px 2px 5px #d9d9d9 !important;
+    cursor: pointer;
+}
 #eraseBtn:hover {
-    background-color: white;
+    background-color: lightpink;
     color: black;
     box-shadow: 6px 2px 5px #d9d9d9;
+    cursor: pointer;
+}
+.clearClass {
+    box-shadow: 20px 20px 10px #d9d9d9;
+    color: white;
     cursor: pointer;
 }
 #clearBtn:hover {
