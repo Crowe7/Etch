@@ -10,19 +10,16 @@ function initPage() {
         output[i].textContent = slider.value;
     }
     grid.style.cssText = gridCss;
-    makeGrid(slider.value);
+    makeGridDiv(slider.value);
 }
 
 slider.oninput = function() {
-    gridCss = "grid-template:repeat(" +this.value + ", 1fr) / repeat(" + this.value + ", 1fr);"
     for (i=0; i < output.length; i++) {
         output[i].textContent = this.value; 
     }
-    grid.style.cssText = gridCss;
-    deleteGrid(10000);
-    makeGrid(this.value);
+    makeGrid(this.value, 10000, this.value);
 }
-function makeGrid(a) {
+function makeGridDiv(a) {
     size = a;
     for(i = 0; i < size; i++) {
         for(j = 0; j < size; j++) {
@@ -31,10 +28,9 @@ function makeGrid(a) {
         }
     }
 }
-function deleteGrid(b) {
-    size = b;
-    for(i = 0; i < size; i++) {
-        for(j = 0; j < size; j++) {
+function deleteGridDiv(b) {
+    size = b * b;
+    for(i = 0; i <+ size; i++) {
             let div = gridContainer.lastElementChild;
             if(div === null) {
                 break;
@@ -44,7 +40,15 @@ function deleteGrid(b) {
             }
         }
     }
+function makeGrid(gridSize, deleteSize, gridCssChange) {
+    gridCss = "grid-template:repeat(" +gridCssChange + ", 1fr) / repeat(" + gridCssChange + ", 1fr);"
+    grid.style.cssText = gridCss;
+    deleteGridDiv(deleteSize)
+    makeGridDiv(gridSize);
+    console.log(deleteGridDiv(gridSize));
+    console.log(makeGridDiv(gridSize));
 }
+
 
 // make a bunch of divs and give class fill <div class="fill"></div> like that
 // grid-template: repeat(16, 1fr) / repeat(16, 1fr);
