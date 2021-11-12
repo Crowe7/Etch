@@ -17,9 +17,11 @@ slider.oninput = function() {
     for (i=0; i < output.length; i++) {
         output[i].textContent = this.value; 
     }
-    makeGrid(this.value, this.value);
 }
-function makeGridDiv(a) {
+slider.onchange = function() {
+    makeGrid(slider.value, slider.value);
+}
+function makeGridDiv(a) { 
     size = a;
     for(i = 0; i < size; i++) {
         for(j = 0; j < size; j++) {
@@ -45,10 +47,9 @@ function makeGrid(gridSize, gridCssChange) {
     grid.style.cssText = gridCss;
     deleteGridDiv();
     makeGridDiv(gridSize);
-    console.log(deleteGridDiv(gridSize));
-    console.log(makeGridDiv(gridSize));
 }
 
 
 // make a bunch of divs and give class fill <div class="fill"></div> like that
 // grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+// makeGrid(slider.value, slider.value);
