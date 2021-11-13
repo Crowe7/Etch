@@ -50,7 +50,7 @@ button {
     outline-offset: -4px;
 }
 .rainbowClass{
-    outline: 4px solid white;
+    outline: 4px solid darkgray !important;
     outline-offset: 0px !important;
     cursor: pointer;
 }
