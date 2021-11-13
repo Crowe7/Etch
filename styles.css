@@ -135,6 +135,7 @@ button {
     padding: 50px;
     outline: 4px solid black;
     margin-right: 40px;
+    background-color: rgb(243, 242, 242);
 }
 .settings-wrapper h2{
     font-size: 40px;
