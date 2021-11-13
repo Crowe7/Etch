@@ -73,6 +73,7 @@ button {
     padding-top: 40px;
     background-color: #d9d9d9;
     padding-bottom: 40px;
+    
 }
 .flex-wrapper{
     flex: 1 0 auto;
@@ -173,4 +174,17 @@ button{
 
 .fill{
     background-color: black !important;
+    ;
 }
+
+@font-face {
+    font-family: mongus;
+    src: url(AmongUs-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  .mong {
+    font-family: 'mongus' !important;
+    font-size: 48px !important;
+    text-transform: uppercase !important;
+  }

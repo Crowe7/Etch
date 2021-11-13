@@ -5,6 +5,7 @@ let grid = document.querySelector(".grid");
 let gridCss = 0;
 let onButton = 1;
 let gridDivs = gridContainer.children;
+let header = document.querySelector('header');
 initPage();
  function initPage() {
     gridCss = "grid-template:repeat(" + slider.value + ", 1fr) / repeat(" + slider.value + ", 1fr);"
@@ -81,6 +82,7 @@ function makeGrid(gridSize, gridCssChange) {
         removeOtherButtonClasses();
         e.target.classList.add('regClass', 'active');
         onButton = 1;
+        mong();
      }
      if(e.target && e.target.id === 'rainbowBtn') {
         removeOtherButtonClasses();
@@ -116,4 +118,13 @@ function pastelColors(){
     var g = (Math.round(Math.random()* 127) + 127).toString(16);
     var b = (Math.round(Math.random()* 127) + 127).toString(16);
     return 'background-color:' + '#' + r + g + b + ';';
+}
+
+function mong() {
+    if (gridDivs.length === gridContainer.querySelectorAll('.fill').length) {
+        header.classList.add('mong')
+    }
+    else {
+        header.classList.remove('mong');
+    }
 }
