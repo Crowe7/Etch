@@ -18,52 +18,93 @@ button {
 }   
 #regBtn{
     padding: 15px 85px !important;
+    outline: 4px solid black;
+    transition: outline-offset .5s;
+    outline-offset: -7px;
+    border: none;
+    background-color: black;
+    color: white;
 }
 .regClass {
     color: white;
-    box-shadow: 5px 5px 10px black;
     background-color: black;
     cursor: pointer;
+    background-color: #1f1f1f !important;
+    outline: 4px solid #1f1f1f !important;
+    outline-offset: 0px !important;
 }
 #regBtn:hover {
     color: white;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 20px 20px 10px #d9d9d9 ;
     background-color: black;
     cursor: pointer;
+    outline-offset: 0px;
 }
 #rainbowBtn{
-    padding: 15px 73px !important;
+    padding: 15px 82px !important;
     background-image: url(color.gif);
     color: white;
+    border: none;
+    outline: 4px solid white;
+    transition: outline-offset .5s;
+    outline-offset: -4px;
 }
 .rainbowClass{
-    box-shadow: 3px 0px 5px #fb0000, 0px 4px 5px #22ff00,  -3px 0 5px #0097ff;
+    outline: 4px solid white;
+    outline-offset: 0px !important;
     cursor: pointer;
 }
 #rainbowBtn:hover {
-    box-shadow: 3px 0px 5px #fb0000, 0px 4px 5px #22ff00,  -3px 0 5px #0097ff;
+    box-shadow: 20px 20px 10px #d9d9d9 ;
     cursor: pointer;
+    outline-offset: 0px;
+    
 }
 #eraseBtn {
-    background-color: lightpink;
-    color: black;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: 4px solid black;
+    transition: outline-offset .5s;
+    outline-offset: -7px;
 }
 .eraseClass {
-    background-color: lightpink !important;
-    color: black !important;
-    box-shadow: 20px 20px 10px #d9d9d9 !important;
+    background-color: black;
+    color: white !important;
     cursor: pointer;
+    background-color: #1f1f1f !important;
+    outline: 4px solid #1f1f1f !important;
+    outline-offset: 0px !important;
 }
 #eraseBtn:hover {
-    background-color: lightpink;
-    color: black;
+    background-color: black;
+    color: white;
     box-shadow: 20px 20px 10px #d9d9d9;
     cursor: pointer;
+    outline-offset: 0px;
+}
+#eraseBtn:active {
+    background-color: #1f1f1f;
+    outline: 4px solid #1f1f1f;
+}
+#clearBtn {
+    color: white;
+    background-color: black;
+    border: none;
+    outline: 4px solid black;
+    transition: outline-offset .5s;
+    outline-offset: -7px;
 }
 #clearBtn:hover {
     box-shadow: 20px 20px 10px #d9d9d9;
     color: white;
     cursor: pointer;
+    outline-offset: 0px;
+
+}
+#clearBtn:active {
+    background-color: #1f1f1f;
+    outline: 4px solid #1f1f1f;
 }
 .header {
     width: 100%;
