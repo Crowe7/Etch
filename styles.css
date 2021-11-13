@@ -132,9 +132,19 @@ button {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-right: 50px;
+    padding: 50px;
+    outline: 4px solid black;
+    margin-right: 40px;
 }
-
+.settings-wrapper h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.settings-wrapper p{
+    font-weight: bold;
+    font-size: 27px;
+}
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -172,7 +182,6 @@ button {
 }
 #gridContainer{
     display: grid;
-    border: 2px solid steelblue;
     height: 700px;
     width: 700px;
     box-shadow: 1px 1px 5px 4px #d9d9d9;
