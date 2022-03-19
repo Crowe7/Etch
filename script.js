@@ -114,9 +114,9 @@ function removeOtherButtonClasses() {
 }
 //got this from stackoverflow. generating 100% random colors was much worse looking
 function pastelColors(){
-    var r = (Math.round(Math.random()* 127) + 127).toString(16);
-    var g = (Math.round(Math.random()* 127) + 127).toString(16);
-    var b = (Math.round(Math.random()* 127) + 127).toString(16);
+    let r = (Math.round(Math.random()* 127) + 127).toString(16);
+    let g = (Math.round(Math.random()* 127) + 127).toString(16);
+    let b = (Math.round(Math.random()* 127) + 127).toString(16);
     return 'background-color:' + '#' + r + g + b + ';';
 }
 

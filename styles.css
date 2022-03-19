@@ -239,3 +239,29 @@ button{
     font-size: 48px !important;
     text-transform: uppercase !important;
   }
+
+
+@media only screen and (max-width: 800px) {
+    #gridContainer {
+      height: 250px;
+      width: 250px;
+    }
+    .settings-wrapper {
+        padding: 20px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .settings-wrapper h2 {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    .content-wrapper button {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .content-wrapper {
+        flex-direction: column-reverse;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
