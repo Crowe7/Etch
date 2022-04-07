@@ -8,4 +8,4 @@ Etch-a-sketch made with JavaScript to further learn DOM manipulation
 
 ## Built with
 
-- [JavaScript](https://reactjs.org/)
+- [JavaScript](https://www.javascript.com/)
